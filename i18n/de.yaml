@@ -1,0 +1,50 @@
+- id: continue_reading
+  translation: Weiterlesen
+
+- id: search_placeholder
+  translation: Type & Hit Enter...
+
+- id: latest_article
+  translation: Latest Artikel
+
+- id: categories
+  translation: Kategorien
+
+- id: tags
+  translation: Tags
+
+- id: search
+  translation: Suche
+
+- id: date
+  translation: Datum
+
+- id: posted_by
+  translation: Verfasst von diesem Autor
+
+- id: send
+  translation: Jetzt Senden
+
+- id: name
+  translation: Ihr Name
+
+- id: email 
+  translation: Ihre E-Mail-Adresse
+
+- id: message
+  translation: Ihre Nachricht hier
+
+- id: subscribe
+  translation: Subscribe now
+
+- id: write_email
+  translation: Hate Forms? Schreiben Sie eine E-Mail
+
+- id: subscribe_newsletter
+  translation: Subscribe Newsletter
+
+- id: quick_links
+  translation: Quick Links
+
+- id: social
+  translation: Social Links
