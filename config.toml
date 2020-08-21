@@ -106,9 +106,10 @@ URL = "privacy-policy"
 weight = 3
 
 [[menu.footer]]
-name = "Terms Conditions"
-URL = "terms-conditions"
+name = "Impressum"
+URL = "impressum"
 weight = 4
+
 
 #################### default parameters ################################
 [params]
@@ -117,9 +118,9 @@ logo = "images/jungh_logo.png"
 description = "This is meta description"
 author = "Hauke Jung"
 # email address
-email = "hauke.jung@outlook.de"
+email = "info@haukejung.de"
 # contact form action
-contact_form_action = "https://formspree.io/mlepzypj" # contact form works with https://formspree.io
+contact_form_action = "" # contact form works with https://formspree.io
 # search
 search = true
 # layout
@@ -136,8 +137,8 @@ preloader = "" # use jpg, png, svg or gif format.
 [params.subscription]
 enable = false
 # mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+mailchimp_form_action = "" # replace this url with yours
+mailchimp_form_name = "" # replace this code with yours
   
 ############################# social site ########################
 
@@ -155,10 +156,6 @@ link = "https://linkedin.com/in/haukejung/"
 name = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/haukejung/"
-
-
-
-
 
 
 ################################### English language #####################################
@@ -182,6 +179,6 @@ contentDir = "content/german"
 weight = 2
 home = "Home"
 # footer content
-footer_content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+footer_content = "Willkommen auf meiner Entwicklerspielwiese und Wissensdatenbank. Schau dich gerne um, möglicherweise wirst du etwas Neues lernen."
 # copyright
 copyright = "Hauke Jung © 2020"

@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-date: 2020-07-10T13:58:00+01:00
+date: 2020-08-01T13:58:00+01:00
 # post thumb
 images:
   - "images/post/hello_world/thumb.webp"
@@ -11,20 +11,16 @@ tags: ["general"]
 draft: false
 ---
 
-## This is my first Post.
+For a long time I have been thinking about how I can store and share my knowledge. Finally I decided to start this blog. After further weeks of researching which framework would be the best for me, I decided to use the static code generator [**HUGO**](https://gohugo.io/getting-started/quick-start/) and host the blog on [**Github Pages**](https://pages.github.com/). Some advantages of this setup are as follows.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- The hosting is easy.
+- It is completely free of charge.
+- I can write my notes in markdown as usual.
+- Can use Git as version control.
 
-Some rust:
 
-```rust
-fn main() {
-    println!("Hello, world!");
-}
-```
+If you are interested in this, you can find the links below to getting started. Maybe I will post a post a step by step guide of my setup later.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- [https://gohugo.io/getting-started/quick-start/](https://gohugo.io/getting-started/quick-start/)
+- [https://pages.github.com/](https://pages.github.com/)
 
-{{< notice "note" >}}
-  This is a simple note.
-{{< /notice >}}

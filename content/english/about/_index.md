@@ -1,10 +1,10 @@
 ---
 title: "About me"
 image: "images/jungh.webp"
-email: "hauke.jung@outlook.de"
+email: "info@haukejung.de"
 social:
   - icon : "ti-email"
-    link : "mailto:hauke.jung@outlook.de"
+    link : "mailto:info@haukejung.de"
   - icon : "ti-github" 
     link : "https://github.com/hauju/"
   - icon : "ti-linkedin" 

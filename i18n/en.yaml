@@ -38,7 +38,7 @@
   translation: Subscribe now
 
 - id: write_email
-  translation: Hate Forms? Write an Email
+  translation: Hate Forms too? Write an Email
 
 - id: subscribe_newsletter
   translation: Subscribe Newsletter
@@ -48,3 +48,6 @@
 
 - id: social
   translation: Social Links
+
+- id: impressum
+  translation: Legal Notice
