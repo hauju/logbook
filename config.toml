@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://jungh.org"
+baseURL = "https://haukejung.de"
 title = "hauju"
 theme = "logbook"
 # post pagination
