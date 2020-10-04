@@ -5,7 +5,7 @@ date: 2020-08-01T13:58:00+01:00
 images:
   - "images/post/hello_world/thumb.webp"
 author: "Hauke Jung"
-description: "This is meta description"
+description: "Welcome to my developer playground and knowledge base."
 categories: ["general", "announcement"]
 tags: ["general"]
 draft: false

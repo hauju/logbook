@@ -2,7 +2,7 @@
 title: "Legal Notice"
 draft: false
 # description
-description: "Legal Notice Impressum"
+description: "Legal Notice / Impressum"
 ---
 
 #### Information according to § 5 TMG

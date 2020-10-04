@@ -2,7 +2,7 @@
 title: "Our Privacy Policy"
 draft: false
 # description
-description: "Privacy Policy Datenschutzerklärung"
+description: "Privacy Policy / Datenschutzerklärung"
 ---
 
 

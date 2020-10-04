@@ -2,7 +2,7 @@
 
 Publish
 
-````bash
+```bash
 hugo -t logbook
 ```
 

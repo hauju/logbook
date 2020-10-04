@@ -2,7 +2,7 @@
 title: "Let´s get in touch"
 image: "images/undraw/undraw_envelope_n8lc.webp"
 # description
-description: "This is meta description"
+description: "Welcome to my developer playground and knowledge base."
 draft: false
 ---
 

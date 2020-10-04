@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://haukejung.de"
-title = "hauju"
+title = "Hauke Jung"
 theme = "logbook"
 # post pagination
 paginate = "5"
@@ -74,7 +74,7 @@ hasChildren = true
   [[menu.main]]
   parent = "Extern"
   name = "IOTA Node"
-  url = "http://iota-no.de:8081/dashboard"
+  url = "http://pollen.iota-no.de:8081/dashboard"
   weight = 1
 
   #[[menu.main]]
@@ -115,7 +115,7 @@ weight = 4
 [params]
 logo = "images/jungh_logo.png"
 # Meta data
-description = "This is meta description"
+description = "Welcome to my developer playground and knowledge base."
 author = "Hauke Jung"
 # email address
 email = "info@haukejung.de"

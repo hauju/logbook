@@ -13,7 +13,7 @@ social:
     link : "https://twitter.com/haukejung/"
 draft: false
 # description
-description: "About this blog."
+description: "Welcome to my developer playground and knowledge base."
 ---
 
 Hi, my name is Hauke Jung. I´m a Full Stack Software Developer and DevOps Enthusiast. My interests are diverse and range from embedded systems to microservices. The development of new technology progresses exponentially, so I try to focus on the things that excite me. My work at Schueco International KG focuses on the development of a Continuous Integration Toolchain for the execution of automated tests. In my free time, I am currently engaged in the research and development of new posibilities based on distributed ledger technology.

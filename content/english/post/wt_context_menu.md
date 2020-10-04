@@ -5,7 +5,7 @@ date: 2020-08-07T22:39:00+01:00
 images:
   - "images/post/wt_context_menu/thumb.webp"
 author: "Hauke Jung"
-description: "Windows Terminal context menu right click open here"
+description: "Learn how to open Windows Terminal with right click context menu."
 categories: ["open source", "windows"]
 tags: ["windows terminal"]
 draft: false

@@ -2,5 +2,5 @@
 title: "Blogs"
 draft: false
 # description
-description: "This is meta description"
+description: "Welcome to my developer playground and knowledge base."
 ---
