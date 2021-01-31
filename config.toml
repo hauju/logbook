@@ -74,7 +74,7 @@ hasChildren = true
   [[menu.main]]
   parent = "Extern"
   name = "IOTA Node"
-  url = "http://pollen.iota-no.de:8081/dashboard"
+  url = "http://pollen.iota-no.de:8091/dashboard"
   weight = 1
 
   #[[menu.main]]
