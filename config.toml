@@ -68,26 +68,20 @@ weight = 3
 # Dropdown menu
 [[menu.main]]
 weight = 4
-name = "Extern"
+name = "IOTA Nodes"
 hasChildren = true
 
   [[menu.main]]
-  parent = "Extern"
-  name = "IOTA Node"
-  url = "http://pollen.iota-no.de:8081/dashboard"
+  parent = "IOTA Nodes"
+  name = "Goshimmer"
+  url = "http://pollen.iota-no.de:8091/dashboard"
   weight = 1
 
-  #[[menu.main]]
-  #parent = "Extern"
-  #name = "IOTA Foundation"
-  #url = "https://iota.org"
-  #weight = 2
-
-  #[[menu.main]]
-  #parent = "Extern"
-  #name = "Tangle Explorer"
-  #url = "https://thetangle.org"
-  #weight = 3
+  [[menu.main]]
+  parent = "IOTA Nodes"
+  name = "Bee"
+  url = "https://bee.iota-no.de"
+  weight = 2
 
 # footer menu
 [[menu.footer]]
@@ -181,4 +175,4 @@ home = "Home"
 # footer content
 footer_content = "Willkommen auf meiner Entwicklerspielwiese und Wissensdatenbank. Schau dich gerne um, möglicherweise wirst du etwas Neues lernen."
 # copyright
-copyright = "Hauke Jung © 2020"
+copyright = "Hauke Jung © 2021"
