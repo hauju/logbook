@@ -1,0 +1,167 @@
+<!doctype html><html lang=en-us><head>
+<meta charset=utf-8>
+<title>Open Windows Terminal here</title>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name=description content="Learn how to open Windows Terminal with right click context menu.">
+<meta name=author content="Hauke Jung">
+<meta name=generator content="Hugo 0.89.4">
+<link rel=stylesheet href=https://haukejung.de/plugins/bootstrap/bootstrap.min.css>
+<link rel=stylesheet href=https://haukejung.de/plugins/themify-icons/themify-icons.css>
+<link rel=stylesheet href=https://haukejung.de/plugins/slick/slick.css>
+<link rel=stylesheet href=https://haukejung.de/scss/style.css media=screen>
+<link rel="shortcut icon" href=https://haukejung.de/images/favicon.png type=image/x-icon>
+<link rel=icon href=https://haukejung.de/images/favicon.png type=image/x-icon>
+<meta property="og:title" content="Open Windows Terminal here">
+<meta property="og:description" content="Learn how to open Windows Terminal with right click context menu.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://haukejung.de/post/wt_context_menu/"><meta property="og:image" content="https://haukejung.de/images/post/wt_context_menu/thumb.webp"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2020-08-07T22:39:00+01:00">
+<meta property="article:modified_time" content="2020-08-07T22:39:00+01:00">
+</head><body>
+<div class=preloader>
+</div>
+<header class="sticky-top bg-white border-bottom border-default">
+<div class=container>
+<nav class="navbar navbar-expand-lg navbar-white">
+<a class=navbar-brand href=/>
+<img class=img-fluid width=150px src=https://haukejung.de/images/jungh_logo.png alt="Hauke Jung"></a>
+<button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation>
+<i class=ti-menu></i>
+</button>
+<div class="collapse navbar-collapse text-center" id=navigation>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://haukejung.de>Home</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://haukejung.de/about>About</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://haukejung.de/contact>Contact</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+IOTA Nodes <i class="ti-angle-down ml-1"></i>
+</a>
+<div class=dropdown-menu>
+<a class=dropdown-item href=https://dashboard.iota-no.de/dashboard>Goshimmer</a>
+</div>
+</li>
+</ul>
+<div class="search px-4">
+<button id=searchOpen class=search-btn><i class=ti-search></i></button>
+<div class=search-wrapper>
+<form action=/search class=h-100>
+<input class="search-box pl-4" id=search-query name=s type=search placeholder="Type & Hit Enter...">
+</form>
+<button id=searchClose class=search-close><i class="ti-close text-dark"></i></button>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<section class=section>
+<div class=container>
+<article class="row mb-4">
+<div class="col-lg-10 mx-auto mb-4">
+<h1 class="h2 mb-3">Open Windows Terminal here</h1>
+<ul class="list-inline post-meta mb-3">
+<li class=list-inline-item><i class="ti-user mr-2"></i><a href=/about//>Hauke Jung</a></li>
+<li class=list-inline-item>Date : August 7, 2020</li>
+<li class=list-inline-item>Categories :
+<a href=/categories/open-source class=ml-1>Open source </a>
+,<a href=/categories/windows class=ml-1>Windows </a>
+</li>
+<li class=list-inline-item>Tags : <a href=/tags/windows-terminal class=ml-1>Windows terminal </a>
+</li>
+</ul>
+</div>
+<div class="col-lg-10 mx-auto">
+<div class=content><p>The new Windows terminal (wt.exe) is very useful. At the moment i use it as my default terminal. It annoys me that there is currently no official way to start it directly from the right click context menu. So I want to show you how I solved this problem for me.</p>
+<h3 id=adding-windows-terminal-to-the-context-menu>Adding Windows Terminal to the context menu</h3>
+<ol>
+<li>
+<p>Download the offical terminal icon from <a href=https://raw.githubusercontent.com/microsoft/terminal/master/res/>https://raw.githubusercontent.com/microsoft/terminal/master/res/</a></p>
+</li>
+<li>
+<p>Save the icon at &ldquo;%USERPROFILE%\AppData\Local\wt\terminal.ico&rdquo;</p>
+</li>
+<li>
+<p>Create a wt.reg file with the following content.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-reg data-lang=reg>Windows Registry Editor Version 5.00
+
+<span style=color:#66d9ef>[</span>HKEY_CLASSES_ROOT<span style=color:#66d9ef>\Directory\Background\shell\wt]</span>
+<span style=color:#a6e22e>@</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Open Windows terminal here&#34;</span>
+<span style=color:#a6e22e>&#34;Icon&#34;</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;%USERPROFILE%\\AppData\\Local\\wt\\terminal.ico&#34;</span>
+
+<span style=color:#66d9ef>[</span>HKEY_CLASSES_ROOT<span style=color:#66d9ef>\Directory\Background\shell\wt\command]</span>
+<span style=color:#a6e22e>@</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;wt.exe -d .&#34;</span>
+</code></pre></div></li>
+<li>
+<p>Execute the file with <strong>Right-Click->Merge</strong>.</p>
+</li>
+<li>
+<p>Finally, your context menu should look like this.</p>
+<img src=../../images/post/wt_context_menu/open_wt_here.webp title="Open Windows terminal here" alt="Open Windows terminal here" width=250>
+</li>
+</ol>
+<div class="notices info"><p>Tested with Windows Terminal Preview 1.2022.0</p></div>
+<h4 id=exception-handling>Exception handling</h4>
+<ol>
+<li>
+<p>If the following error occurs it might help if you switch to the preview version.</p>
+<p><img src=../../images/post/wt_context_menu/access_error.webp alt="Access error" title="Access error"></p>
+</li>
+<li>
+<p>Once windows terminal preview is installed, you can open the <strong>Manage app execution aliases</strong> settings and switch to the preview version.</p>
+<p><img src=../../images/post/wt_context_menu/app_execution_alias.webp alt="App execution alias" title="App execution alias"></p>
+</li>
+</ol>
+</div>
+</div>
+</article>
+</div>
+</section>
+<footer class="section-sm pb-0 border-top border-default">
+<div class=container>
+<div class="row justify-content-between">
+<div class="col-md-3 mb-4">
+<a class="mb-4 d-block" href=/><img class=img-fluid width=150px src=https://haukejung.de/images/jungh_logo.png alt="Hauke Jung"></a>
+<p>Welcome to my developer playground and knowledge base. Feel free to look around and you will hopefully learn something new.</p>
+</div>
+<div class="col-lg-2 col-md-3 col-6 mb-4">
+<h6 class=mb-4>Quick Links</h6>
+<ul class="list-unstyled footer-list">
+<li><a href=https://haukejung.de/about>About</a></li>
+<li><a href=https://haukejung.de/contact>Contact</a></li>
+<li><a href=https://haukejung.de/privacy-policy>Privacy Policy</a></li>
+<li><a href=https://haukejung.de/impressum>Impressum</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-3 col-6 mb-4">
+<h6 class=mb-4>Social Links</h6>
+<ul class="list-unstyled footer-list">
+<li><a href=https://github.com/hauju/>Github</a></li>
+<li><a href=https://linkedin.com/in/haukejung/>Linkedin</a></li>
+<li><a href=https://twitter.com/haukejung/>Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class=scroll-top>
+<a href=javascript:void(0); id=scrollTop><i class=ti-angle-up></i></a>
+</div>
+<div class=text-center>
+<p class=content>Hauke Jung © 2021</p>
+</div>
+</div>
+</footer>
+<script>var indexURL="https://haukejung.de/index.json"</script>
+<script src=https://haukejung.de/plugins/jQuery/jquery.min.js></script>
+<script src=https://haukejung.de/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://haukejung.de/plugins/slick/slick.min.js></script>
+<script src=https://haukejung.de/plugins/search/fuse.min.js></script>
+<script src=https://haukejung.de/plugins/search/mark.js></script>
+<script src=https://haukejung.de/plugins/search/search.js></script>
+<script src=https://haukejung.de/js/script.min.js></script></body>
+</html>
