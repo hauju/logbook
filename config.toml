@@ -74,14 +74,8 @@ hasChildren = true
   [[menu.main]]
   parent = "IOTA Nodes"
   name = "Goshimmer"
-  url = "http://pollen.iota-no.de:8091/dashboard"
+  url = "https://dashboard.iota-no.de/dashboard"
   weight = 1
-
-  [[menu.main]]
-  parent = "IOTA Nodes"
-  name = "Bee"
-  url = "https://bee.iota-no.de"
-  weight = 2
 
 # footer menu
 [[menu.footer]]
@@ -162,7 +156,7 @@ home = "Home"
 # footer content
 footer_content = "Welcome to my developer playground and knowledge base. Feel free to look around and you will hopefully learn something new."
 # copyright
-copyright = "Hauke Jung © 2020"
+copyright = "Hauke Jung © 2021"
 
 
 ################################### German language #####################################
