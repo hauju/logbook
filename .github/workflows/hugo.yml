@@ -3,6 +3,8 @@ name: hugo
 on:
   pull_request:
   push:
+    branches:
+      - main
 
 jobs:
   hugo:
@@ -14,7 +16,7 @@ jobs:
         uses: crazy-max/ghaction-hugo@v1
         with:
           version: latest
-          extended: false
+          extended: true
           args: --cleanDestinationDir --minify --verbose
       - name: Deploy to GitHub Pages
         if: success() && github.event_name != 'pull_request'
